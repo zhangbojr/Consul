@@ -1,0 +1,23 @@
+{
+  "encrypt": "7TnJPB4lKtjEcCWWjN6jSA==",
+  "services": [
+    {
+      "id": "ApiServiceA",
+      "name": "MyService",
+      "tags": ["ApiServiceA"],
+      "address": "192.168.2.6",
+      "port": 5011,
+      "checks": [
+        {
+          "id": "CK A 5011",
+          "name": "CK A 5011",
+          "http": "http://192.168.2.6:5011/health",
+          "interval": "5s",
+          "tls_skip_verify": false,
+          "method": "GET",
+          "timeout": "1s"
+        }
+      ]
+    }
+  ]
+}
